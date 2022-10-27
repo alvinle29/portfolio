@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaBlogger, FaGithub, FaInstagram, FaLinkedinIn} from 'react-icons/fa'
 
 import styles from './Home.module.css'
 
@@ -25,6 +26,21 @@ const Home = () => {
             <div className={styles.media__container}>
               <div className={styles.profile__picture}>
                 <div className={styles.profile__picture__bg}></div>
+              </div>
+              <div className={styles.social__container}>
+                <a href="https://www.linkedin.com/in/bach-l-298105138/">
+                  <FaLinkedinIn className={styles.LinkedIn} />
+                </a>
+                <a href="https://github.com/alvinle29">
+                  <FaGithub className={styles.GitHub} />
+                </a>
+                <a href="https://www.instagram.com/eodin.le_/">
+                  <FaInstagram className={styles.Instagram} />
+                </a>
+                <a href="https://www.alvinle.site/">
+                  <FaBlogger className={styles.Blogger} />
+                </a>
+
               </div>
             </div>
           </div>

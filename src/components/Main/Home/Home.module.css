@@ -1,13 +1,14 @@
 .home {
   min-height: 100vh;
-  padding-top: calc(var(--nav-height) + 70px);
-
+  padding: calc(var(--nav-height) + 20px) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--clr-secondaryLight);
 }
 
 .intro__container {
   width: 1000px;
-  margin: 0 auto;
   box-shadow: -1px 1px 3px -1px var(--clr-primaryDark);
   border-radius: 5px 5px 0 0;
   background: var(--clr-primaryLight);
@@ -56,6 +57,10 @@
   align-items: flex-start;
 }
 
+.description h1 {
+  font-family: var(--ff-secondary);
+}
+
 .description a {
   margin-top: 15px;
   padding: 15px 30px;
@@ -81,6 +86,7 @@
 .media__container {
   padding: 0 40px 0 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -88,11 +94,9 @@
 .profile__picture {
   height: 350px;
   width: 350px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   box-shadow: 0 1px 0 0 var(--clr-accent);
   border-radius: 50%;
 }
@@ -103,6 +107,34 @@
   border-radius: 50%;
   background-image: url("../../../../public/profile_pic.jpg");
   background-size: cover;
+}
+
+.social__container {
+  height: 50px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.LinkedIn,
+.GitHub,
+.Instagram,
+.Blogger {
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--clr-primaryLight);
+  background: var(--clr-accent);
+  transition: 1s;
+}
+
+.LinkedIn:hover,
+.GitHub:hover,
+.Instagram:hover,
+.Blogger:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1100px) {
