@@ -3,12 +3,12 @@ import React from 'react'
 import About from "./About/About"
 import Contact from "./Contact/Contact"
 import Projects from "./Projects/Projects"
-import Welcome from "./Welcome/Welcome"
+import Home from "./Home/Home"
 
 const Main = () => {
   return (
     <div>
-      <Welcome />
+      <Home />
       <About />
       <Projects />
       <Contact />
